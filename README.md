@@ -6,15 +6,24 @@
 
 ## HEADING OUTLINE
 [DATA SOURCE](#data-source)
+
 [TOOLS USED](#tools-used)
+
 [DATA CLEANING AND PREPARATIONS](#data-cleaning-and-preparations)
+
 [PROJECT OVERVIEW FOR SPA](#project-overview-for-spa)
-[PROJECT OVERVIEW FOR CS](#project-overview
-[COLUMN DEFINITIONS FOR SPA](#
-[COLUMN DEFINITIONS FOR CS](#
-[EXPLORATORY DATA ANALYSIS](#
-[DATA ANALYSIS](#
-[CONCLUSION FROM ANALYSIS](#
+
+[PROJECT OVERVIEW FOR CS](#project-overview-for-cs)
+
+[COLUMN DEFINITIONS FOR SPA](#column-definitions-for-spa)
+
+[COLUMN DEFINITIONS FOR CS](#column-definitions-for-cs)
+
+[EXPLORATORY DATA ANALYSIS](#exploratory-data-analysis)
+
+[DATA ANALYSIS](#data-analysis)
+
+[CONCLUSION FROM ANALYSIS](#conclusion-from-analysis)
 
 ## DATA SOURCE
 The main data sources for this analysis are the "Data Sales.csv" and "Customer.csv" files, which are open-source datasets available for free download from online repositories like Kaggle, FRED, or any other data repository site.
@@ -33,13 +42,13 @@ In the intial phase of Data Cleaning and Preparations, we perform the following 
 - Handling missing variables
 - Data Cleaning and Formatting
 
-### PROJECT OVERVIEW FOR SPA
+## PROJECT OVERVIEW FOR SPA
 This project aims to uncover key insights including, but not limited to, top-selling products, regional performance, and monthly sales trends for the sales dataset obtained from a Retail Store. The dataset contains information about the customers such as their CustomerId, and region; and also about the sales which include OrderId, product, quantity and unit price.
 
-### PROJECT OVERVIEW FOR CS
+## PROJECT OVERVIEW FOR CS
 This project involves analyzing customer data for a subscription service to identify segments and trends. The goal is to understand customer behavior, track subscription types, and identify key trends in cancellations and renewals. The dataset contains customer information such as CustomerId, customer name and region; and subscription information such as subscription type, subscription start and end dates, cancelled subscriptions and revenue.
 
-### COLUMN DEFINITIONS FOR SPA
+## COLUMN DEFINITIONS FOR SPA
 - ORDERID: a unique identifier for an order that links all items in a transaction.
 - CUSTOMERID: a unique number or alphanumeric identifier assigned to a customer by a company or organization.
 - PRODUCT: specific good(s) purchsed by a customer.
@@ -48,7 +57,7 @@ This project involves analyzing customer data for a subscription service to iden
 - QUANTITY: the amount of products purchased by a customer.
 - UNITPRICE: the price of each product as one item.
 
-### COLUMN DEFINITIONS FOR CS
+## COLUMN DEFINITIONS FOR CS
 - CUSTOMERNAME: the name of each customer.
 - CUSTOMERID: a unique number or alphanumeric identifier assigned to a customer by a company or organization.
 - SUBSCRIPTIONTYPE: type of services offered to a customer or the level of subscription sent to subscribers.
@@ -58,7 +67,7 @@ This project involves analyzing customer data for a subscription service to iden
 - CANCELLED: if the subscriber cancelled their subscription at any time.
 - REVENUE: the income generated from subscriptions.
 
-### EXPLORATORY DATA ANALYSIS
+## EXPLORATORY DATA ANALYSIS
 Exploratory Data Analysis involved the exploratory of the Data to answer some questions about the data such as;
 1. For SPA
    - Retrieve the total sales for each product category.
@@ -84,7 +93,7 @@ Exploratory Data Analysis involved the exploratory of the Data to answer some qu
      - Find the top 3 regions by subscription cancellations.
      - Find the total number of active and canceled subscriptions.
 
-### DATA ANALYSIS
+## DATA ANALYSIS
 Some basic lines of code or queries or even some of the DAX expressions used during analysis include:
 ```SQL
 SELECT TOP 1 PRODUCT,
@@ -97,7 +106,8 @@ SELECT REGION, COUNT (CUSTOMERID) AS TOTAL_CUSTOMERS FROM CUSTOMERSDATA
 GROUP BY REGION
 ```
 
-### CONCLUSION FROM ANALYSIS
+## CONCLUSION FROM ANALYSIS
 - SPA
+  
 
 - CS
